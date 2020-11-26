@@ -1,0 +1,19 @@
+t = int(input())
+a = [int(i) for i in input().split()]
+den = [int(i) for i in input().split()]
+print(round(sum([i[0]*i[1] for i in zip(a,den)])/sum(den),1))
+
+
+
+'''
+Sample Input
+
+5
+10 40 30 50 20
+1 2 3 4 5
+
+Sample Output
+
+32.0
+
+'''
